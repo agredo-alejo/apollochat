@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,22 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.scrollbarHide {
+  scrollbar-width: none;
+}
+.scrollbarHide::-webkit-scrollbar {
+  width: 0px
+}
+.modal {
+  position: fixed;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  z-index: 1000;
+  background-color: #00000080;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }
